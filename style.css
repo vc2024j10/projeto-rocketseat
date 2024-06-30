@@ -25,14 +25,8 @@ box-sizing: border-box;
 }
 
 body {
-    /*
-    background-image: url(./assets/assets/bg-mobile.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-position: cover;
-*/
-/*background: color image repeat position/size */
 background: var(--bg-url) no-repeat top center/cover;
+height: 100vh;
 
 }
 body * { font-family: "Inter", sans-serif;
@@ -177,4 +171,16 @@ text-align: center;
 font-size: 14px;
 }
 
+
+@media (min-width: 700px) {
+    :root {
+        --bg-url: url(./assets/assets/bg-desktop.jpg)
+
+    }
+
+    .light{
+        --bg-url: url(./assets/assets/bg-desktop-light.jpg)
+    }
+
+}
 
